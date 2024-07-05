@@ -1,9 +1,9 @@
-### Hi there 🤠
+### Hello there.
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aegiru&theme=tokyonight&layout=compact&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jakub-jedrzejczyk&theme=tokyonight&layout=compact&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--
-**aegiru/aegiru** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**jakub-jedrzejczyk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
