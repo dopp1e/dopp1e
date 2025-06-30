@@ -29,5 +29,8 @@ jobs:
           plugin_followup_sections: user
           plugin_languages: yes
           plugin_languages_analysis_timeout: 60
+          plugin_languages_indepth: yes
+          plugin_languages_details: bytes-size,percentage,lines
+          plugin_languages_ignored: ShaderLab
           repositories_affiliations: owner,collaborator
           repositories_forks: yes
