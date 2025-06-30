@@ -22,6 +22,7 @@ jobs:
           base: header, activity, repositories, metadata
           base_indepth: yes
           commits_authoring: aegiruchan@gmail.com,doppie@google.sex.pl,qdoppie@gmail.com
+          repositories_skipped: KubekZTwoimNadrukiem/BiznesElektroniczny
           config_timezone: Europe/Warsaw
           plugin_followup: yes
           plugin_followup_archived: yes
