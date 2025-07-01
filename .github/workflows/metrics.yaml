@@ -19,15 +19,15 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: dopp1e
           template: classic
-          base: header, activity, repositories, metadata
-          base_indepth: yes
-          commits_authoring: aegiruchan@gmail.com,doppie@google.sex.pl,qdoppie@gmail.com
-          repositories_skipped: KubekZTwoimNadrukiem/BiznesElektroniczny
-          config_timezone: Europe/Warsaw
-          plugin_followup: yes
-          plugin_followup_archived: yes
-          plugin_followup_indepth: yes
-          plugin_followup_sections: user
+          # base: header, activity, repositories, metadata
+          # base_indepth: yes
+          # commits_authoring: aegiruchan@gmail.com,doppie@google.sex.pl,qdoppie@gmail.com
+          # repositories_skipped: KubekZTwoimNadrukiem/BiznesElektroniczny
+          # config_timezone: Europe/Warsaw
+          # plugin_followup: yes
+          # plugin_followup_archived: yes
+          # plugin_followup_indepth: yes
+          # plugin_followup_sections: user
           plugin_languages: yes
           plugin_languages_analysis_timeout: 60
           plugin_languages_analysis_timeout_repositories: 0
@@ -36,3 +36,5 @@ jobs:
           plugin_languages_ignored: ShaderLab
           repositories_affiliations: owner,collaborator
           repositories_forks: yes
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
