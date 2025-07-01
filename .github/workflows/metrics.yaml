@@ -21,9 +21,9 @@ jobs:
           template: classic
           # base: header, activity, repositories, metadata
           # base_indepth: yes
-          # commits_authoring: aegiruchan@gmail.com,doppie@google.sex.pl,qdoppie@gmail.com
-          # repositories_skipped: KubekZTwoimNadrukiem/BiznesElektroniczny
-          # config_timezone: Europe/Warsaw
+          commits_authoring: aegiruchan@gmail.com,doppie@google.sex.pl,qdoppie@gmail.com
+          repositories_skipped: KubekZTwoimNadrukiem/BiznesElektroniczny
+          config_timezone: Europe/Warsaw
           # plugin_followup: yes
           # plugin_followup_archived: yes
           # plugin_followup_indepth: yes
@@ -36,5 +36,4 @@ jobs:
           plugin_languages_ignored: ShaderLab
           repositories_affiliations: owner,collaborator
           repositories_forks: yes
-          output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          output_action: json
