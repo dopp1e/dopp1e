@@ -2,6 +2,8 @@
 
 # hi, _doppie_ here.
 
+<sub>Jakub Jędrzejczyk</sub>
+
 <pre>
 💼 BSC @ GUT • The Everything Dev
 💻 Selfhosted & Linux Enthusiast
@@ -9,6 +11,9 @@
 </pre>
 
 ### 📊 Most Used Languages
+
+<sub>Based on 414.12 kb of code</sub><br/>
+<sup>in 438 files across 114 commits.</sup>
 
 <pre>
 🟦 Python      5.25k lines  190.6 kb  46.03%
@@ -19,6 +24,7 @@
 🟧 Lua         1.22k lines  30.1 kb    7.28%
 🟫 Rust        974 lines    29.3 kb    7.06%
 ⬛ TypeScript  377 lines    11.1 kb    2.68%
+
 </pre>
 
 <details>
@@ -27,7 +33,7 @@
 </details>
 
 _<sub>Data acquired using [metrics][metrics_url] (v3.34.0).</sub>_<br/>
-_<sup>Last update on 2 Jul 2025, 21:08:59.</sup>_
+_<sup>Last update on 2 Jul 2025, 21:40:09.</sup>_
 
 ### 🛠 Currently Working On
 
