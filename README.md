@@ -19,7 +19,6 @@
 🟧 Lua         1.22k lines  30.1 kb    7.28%
 🟫 Rust        974 lines    29.3 kb    7.06%
 ⬛ TypeScript  377 lines    11.1 kb    2.68%
-
 </pre>
 
 <details>
@@ -27,20 +26,20 @@
 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟨🟨🟨🟨<br>🟨🟨🟨🟨🟨🟨🟨🟨🟥🟥<br>🟥🟥🟥🟥🟥🟥🟥🟩🟩🟩<br>🟩🟩🟩🟩🟩🟪🟪🟪🟪🟪<br>🟪🟪🟪🟧🟧🟧🟧🟧🟧🟧<br>🟫🟫🟫🟫🟫🟫🟫⬛⬛⬛<br>
 </details>
 
-_<sub>Data acquired using [metrics][metrics_url] (v3.34.0).</sub>_
+_<sub>Data acquired using [metrics][metrics_url] (v3.34.0).</sub>_<br/>
 _<sup>Last update on 2 Jul 2025, 03:50:14.</sup>_
 
 ### 🛠 Currently Working On
 
 **[webingo][webingo]**  
-Bingo game REST API & frontend.
+Bingo game REST API & frontend.<br/>
 ![Go][golang_shield] ![PostgreSQL][postgres_shield]
 
 **Vanguard**  
-Proxy server and a NAS, paired to create
-a well-rouneded self-hosted ecosystem.
-_<sub>Runs \*-arr-stack, GPU-accelerated Jellyfin,</sub>_
-_<sup>Authentik for LDAP, Vikunja, and more.</sup>_
+Proxy server and a NAS, paired to create<br/>
+a well-rouneded self-hosted ecosystem.<br/>
+_<sub>Runs \*-arr-stack, GPU-accelerated Jellyfin,</sub>_<br/>
+_<sup>Authentik for LDAP, Vikunja, and more.</sup>_<br/>
 ![Docker][docker_shield] ![TrueNAS][truenas_shield] ![Portainer][portainer_shield]
 
 _Other, currently secret, projects..._ 🤫
@@ -49,8 +48,8 @@ _Other, currently secret, projects..._ 🤫
 
 **[This readme!][profile_readme]**
 
-Utilises Github Actions and a short Go
-program to generate this readme.
+Utilises Github Actions and a short Go<br/>
+program to generate this readme.<br/>
 ![Go][golang_shield] ![Github Actions][github_actions_shield]
 
 _\- - - - -_

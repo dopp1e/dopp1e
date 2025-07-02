@@ -19,20 +19,20 @@
 {{LANGUAGE_GRID}}
 </details>
 
-_<sub>Data acquired using [metrics][metrics_url] (v{{VERSION}}).</sub>_
+_<sub>Data acquired using [metrics][metrics_url] (v{{VERSION}}).</sub>_<br/>
 _<sup>Last update on {{UPDATE_DATE}}.</sup>_
 
 ### 🛠 Currently Working On
 
 **[webingo][webingo]**  
-Bingo game REST API & frontend.
+Bingo game REST API & frontend.<br/>
 ![Go][golang_shield] ![PostgreSQL][postgres_shield]
 
 **Vanguard**  
-Proxy server and a NAS, paired to create
-a well-rouneded self-hosted ecosystem.
-_<sub>Runs \*-arr-stack, GPU-accelerated Jellyfin,</sub>_
-_<sup>Authentik for LDAP, Vikunja, and more.</sup>_
+Proxy server and a NAS, paired to create<br/>
+a well-rouneded self-hosted ecosystem.<br/>
+_<sub>Runs \*-arr-stack, GPU-accelerated Jellyfin,</sub>_<br/>
+_<sup>Authentik for LDAP, Vikunja, and more.</sup>_<br/>
 ![Docker][docker_shield] ![TrueNAS][truenas_shield] ![Portainer][portainer_shield]
 
 _Other, currently secret, projects..._ 🤫
@@ -41,8 +41,8 @@ _Other, currently secret, projects..._ 🤫
 
 **[This readme!][profile_readme]**
 
-Utilises Github Actions and a short Go
-program to generate this readme.
+Utilises Github Actions and a short Go<br/>
+program to generate this readme.<br/>
 ![Go][golang_shield] ![Github Actions][github_actions_shield]
 
 _\- - - - -_

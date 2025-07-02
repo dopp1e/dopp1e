@@ -302,6 +302,8 @@ func main() {
 	}
 	// Prepare for proper Markdown formatting
 	grid = strings.ReplaceAll(grid, "\n", "<br>")
+	// Remove trailing newline from the statBlock
+	statBlock = strings.TrimSuffix(statBlock, "\n")
 	// Replace placeholders in the template
 	readme := strings.ReplaceAll(string(template), "{{LANGUAGE_GRID}}", grid)
 	readme = strings.ReplaceAll(readme, "{{LANGUAGE_STATS}}", statBlock)
