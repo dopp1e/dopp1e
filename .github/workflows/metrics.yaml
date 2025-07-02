@@ -51,6 +51,9 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: "1.24"
+      - name: Pull repository metrics
+        run: |
+          git pull origin main
       - name: Generate README.md
         run: |
           echo "Generating README.md..."
