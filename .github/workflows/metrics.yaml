@@ -38,6 +38,7 @@ jobs:
           repositories_forks: yes
           #output_action: pull-request-merge
           config_output: json
+          committer_message: "chore: update metrics"
     # Run the main.go script to generate the README.md
   generate-readme:
     runs-on: ubuntu-latest
@@ -63,5 +64,5 @@ jobs:
           git config --global user.name 'dopp1e'
           git config --global user.email 'qdoppie@gmail.com'
           git add README.md
-          git commit -am "Automated README.md update"
+          git commit -am "chore: automated README.md update"
           git push

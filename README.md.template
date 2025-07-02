@@ -2,6 +2,8 @@
 
 # hi, _doppie_ here.
 
+<sub>Jakub Jędrzejczyk</sub>
+
 <pre>
 💼 BSC @ GUT • The Everything Dev
 💻 Selfhosted & Linux Enthusiast
@@ -9,6 +11,9 @@
 </pre>
 
 ### 📊 Most Used Languages
+
+<sub>Based on {{CODEBASE_SIZE}} of code</sub><br/>
+<sup>in {{FILE_COUNT}} files across {{COMMIT_COUNT}} commits.</sup>
 
 <pre>
 {{LANGUAGE_STATS}}

@@ -303,12 +303,15 @@ func main() {
 	// Prepare for proper Markdown formatting
 	grid = strings.ReplaceAll(grid, "\n", "<br>")
 	// Remove trailing newline from the statBlock
-	statBlock = strings.TrimSuffix(statBlock, "\n")
+
 	// Replace placeholders in the template
 	readme := strings.ReplaceAll(string(template), "{{LANGUAGE_GRID}}", grid)
 	readme = strings.ReplaceAll(readme, "{{LANGUAGE_STATS}}", statBlock)
 	readme = strings.ReplaceAll(readme, "{{VERSION}}", data.Meta.Version)
-	readme = strings.ReplaceAll((readme), "{{UPDATE_DATE}}", data.Meta.Generated)
+	readme = strings.ReplaceAll(readme, "{{UPDATE_DATE}}", data.Meta.Generated)
+	readme = strings.ReplaceAll(readme, "{{CODEBASE_SIZE}}", floatToFilesize(totalSize, 2))
+	readme = strings.ReplaceAll(readme, "{{FILE_COUNT}}", strconv.Itoa(languageData.Files))
+	readme = strings.ReplaceAll(readme, "{{COMMIT_COUNT}}", strconv.Itoa(languageData.Commits))
 	// Write the output to README.md
 	err = ioutil.WriteFile("README.md", []byte(readme), 0644)
 	if err != nil {
