@@ -11,24 +11,16 @@
 ### 📊 Most Used Languages
 
 <pre>
-🟦 Python      5.25k lines  190.6 kb  46.03%
-🟨 C++         2.30k lines  49.7 kb   12.00%
-🟥 Zig         836 lines    35.4 kb    8.54%
-🟩 Shell       838 lines    34.4 kb    8.30%
-🟪 Java        1.23k lines  33.6 kb    8.11%
-🟧 Lua         1.22k lines  30.1 kb    7.28%
-🟫 Rust        974 lines    29.3 kb    7.06%
-⬛ TypeScript  377 lines    11.1 kb    2.68%
-
+{{LANGUAGE_STATS}}
 </pre>
 
 <details>
 <summary>🖼️ Graphical Representation</summary>
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟨🟨🟨🟨<br>🟨🟨🟨🟨🟨🟨🟨🟨🟥🟥<br>🟥🟥🟥🟥🟥🟥🟥🟩🟩🟩<br>🟩🟩🟩🟩🟩🟪🟪🟪🟪🟪<br>🟪🟪🟪🟧🟧🟧🟧🟧🟧🟧<br>🟫🟫🟫🟫🟫🟫🟫⬛⬛⬛<br>
+{{LANGUAGE_GRID}}
 </details>
 
-_<sub>Data acquired using [metrics][metrics_url] (v3.34.0).</sub>_
-_<sup>Last update on 2 Jul 2025, 03:50:14.</sup>_
+_<sub>Data acquired using [metrics][metrics_url] (v{{VERSION}}).</sub>_
+_<sup>Last update on {{UPDATE_DATE}}.</sup>_
 
 ### 🛠 Currently Working On
 
