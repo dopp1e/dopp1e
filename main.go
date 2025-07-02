@@ -309,7 +309,7 @@ func main() {
 	readme = strings.ReplaceAll(readme, "{{LANGUAGE_STATS}}", statBlock)
 	readme = strings.ReplaceAll(readme, "{{VERSION}}", data.Meta.Version)
 	readme = strings.ReplaceAll(readme, "{{UPDATE_DATE}}", data.Meta.Generated)
-	readme = strings.ReplaceAll(readme, "{{CODEBASE_SIZE}}", floatToFilesize(totalSize, 2))
+	readme = strings.ReplaceAll(readme, "{{CODEBASE_SIZE}}", floatToFilesize(float64(languageData.Total), 2))
 	readme = strings.ReplaceAll(readme, "{{FILE_COUNT}}", strconv.Itoa(languageData.Files))
 	readme = strings.ReplaceAll(readme, "{{COMMIT_COUNT}}", strconv.Itoa(languageData.Commits))
 	// Write the output to README.md
