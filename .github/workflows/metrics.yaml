@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: dopp1e/metrics@0.1
+      - uses: dopp1e/metrics@0.1-1
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: dopp1e
