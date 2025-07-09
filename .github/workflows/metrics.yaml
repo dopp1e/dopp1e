@@ -20,8 +20,9 @@ jobs:
           user: dopp1e
           template: classic
           base:
+          debug: true
           # base_indepth: yes
-          commits_authoring: aegiruchan@gmail.com,doppie@google.sex.pl,qdoppie@gmail.com
+          commits_authoring: aegiruchan@gmail.com,doppie@google.sex.pl,qdoppie@gmail.com,s188752@student.pg.edu.pl
           repositories_skipped: KubekZTwoimNadrukiem/BiznesElektroniczny
           config_timezone: Europe/Warsaw
           # plugin_followup: yes

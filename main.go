@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"math"
+	"os"
 	"sort"
 	"strconv"
 	"strings"
@@ -233,7 +233,7 @@ func FormatLanguageStatsBlock(
 }
 
 func main() {
-	plan, _ := ioutil.ReadFile("github-metrics.json")
+	plan, _ := os.ReadFile("github-metrics.json")
 	var data Metrics
 	if err := json.Unmarshal(plan, &data); err != nil {
 		panic(err)
@@ -290,20 +290,20 @@ func main() {
 		//log.Printf("%s: %s (%s, %.2f%%)", lang, floatToFilesize(stats[0], 1), floatToString(stats[1]), stats[2])
 	}
 
-	grid, langColors := GenerateEmojiGrid(extractedData, 10, 10)
+	grid, langColors := GenerateEmojiGrid(extractedData, 15, 5)
 	statBlock := FormatLanguageStatsBlock(extractedData, langColors)
 	log.Println("\n" + grid)
 	log.Println("\nLanguage Stats:\n" + statBlock)
 
 	// Open the template file
-	template, err := ioutil.ReadFile("README.md.template")
+	template, err := os.ReadFile("README.md.template")
 	if err != nil {
 		log.Fatalf("Error reading template file: %v", err)
 	}
 	// Prepare for proper Markdown formatting
 	grid = strings.ReplaceAll(grid, "\n", "<br>")
 	// Remove trailing newline from the statBlock
-
+	statBlock = strings.TrimSuffix(statBlock, "\n")
 	// Replace placeholders in the template
 	readme := strings.ReplaceAll(string(template), "{{LANGUAGE_GRID}}", grid)
 	readme = strings.ReplaceAll(readme, "{{LANGUAGE_STATS}}", statBlock)
@@ -313,7 +313,7 @@ func main() {
 	readme = strings.ReplaceAll(readme, "{{FILE_COUNT}}", strconv.Itoa(languageData.Files))
 	readme = strings.ReplaceAll(readme, "{{COMMIT_COUNT}}", strconv.Itoa(languageData.Commits))
 	// Write the output to README.md
-	err = ioutil.WriteFile("README.md", []byte(readme), 0644)
+	err = os.WriteFile("README.md", []byte(readme), 0644)
 	if err != nil {
 		log.Fatalf("Error writing README.md: %v", err)
 	}
