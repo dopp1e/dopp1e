@@ -12,8 +12,8 @@
 
 ### 📊 Most Used Languages
 
-<sub>Based on 719.59 kb of code</sub><br/>
-<sup>in 516 files across 195 commits.</sup>
+<sub>Based on 719.73 kb of code</sub><br/>
+<sup>in 517 files across 196 commits.</sup>
 
 <pre>
 🟦 Python      5.25k lines  190.6 kb  48.08%
@@ -32,7 +32,7 @@
 </details>
 
 _<sub>Data acquired using [metrics][metrics_url] (v3.34.0).</sub>_<br/>
-_<sup>Last update on 17 Sept 2025, 03:36:25.</sup>_
+_<sup>Last update on 18 Sept 2025, 03:28:41.</sup>_
 
 ### 🛠 Currently Working On
 
