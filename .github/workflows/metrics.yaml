@@ -24,7 +24,7 @@ jobs:
           # base_indepth: yes
           commits_authoring: aegiruchan@gmail.com,doppie@google.sex.pl,qdoppie@gmail.com,s188752@student.pg.edu.pl
           repositories_skipped: KubekZTwoimNadrukiem/BiznesElektroniczny
-          config_timezone: Europe/Warsaw
+          config_timezone: Europe/London
           # plugin_followup: yes
           # plugin_followup_archived: yes
           # plugin_followup_indepth: yes

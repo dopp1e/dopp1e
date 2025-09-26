@@ -70,6 +70,41 @@ func floatToFilesize(f float64, precision int) string {
 	}
 }
 
+func loadEnvInt(key string, defaultValue int) int {
+	valueStr, exists := os.LookupEnv(key)
+	if !exists {
+		log.Printf("Environment variable %s not set, using default %d", key, defaultValue)
+		return defaultValue
+	}
+	value, err := strconv.Atoi(valueStr)
+	if err != nil {
+		log.Printf("Invalid integer for %s: %s, using default %d", key, valueStr, defaultValue)
+		return defaultValue
+	}
+	return value
+}
+
+func loadEnvStringSlice(key, sep string, defaultValue []string) []string {
+	valueStr, exists := os.LookupEnv(key)
+	if !exists {
+		log.Printf("Environment variable %s not set, using default %v", key, defaultValue)
+		return defaultValue
+	}
+	parts := strings.Split(valueStr, sep)
+	var result []string
+	for _, part := range parts {
+		trimmed := strings.TrimSpace(part)
+		if trimmed != "" {
+			result = append(result, trimmed)
+		}
+	}
+	if len(result) == 0 {
+		log.Printf("Environment variable %s is empty after splitting, using default %v", key, defaultValue)
+		return defaultValue
+	}
+	return result
+}
+
 type LangData struct {
 	Name      string
 	Size      float64
@@ -81,11 +116,26 @@ type LangData struct {
 	Remainder float64
 }
 
-func GenerateEmojiGrid(input map[string][]float64, rows, cols int) (string, map[string]string) {
-	totalSquares := rows * cols
+type Config struct {
+	LanguagesToConsider int
+	GridRows            int
+	GridCols            int
+	Colors              []string
+}
 
-	// Fixed palette
-	colors := []string{"🟦", "🟨", "🟥", "🟩", "🟪", "🟧", "🟫", "⬛"}
+func getConfig() Config {
+	return Config{
+		LanguagesToConsider: loadEnvInt("LANGUAGES_TO_CONSIDER", 8),
+		GridRows:            loadEnvInt("GRID_ROWS", 5),
+		GridCols:            loadEnvInt("GRID_COLS", 15),
+		Colors: loadEnvStringSlice("GRID_COLORS", ",", []string{
+			"🟦", "🟨", "🟥", "🟩", "🟪", "🟧", "🟫", "⬛",
+		}),
+	}
+}
+
+func GenerateEmojiGrid(input map[string][]float64, rows int, cols int, colors []string) (string, map[string]string) {
+	totalSquares := rows * cols
 
 	// Build and sort languages
 	var langs []LangData
@@ -233,6 +283,8 @@ func FormatLanguageStatsBlock(
 }
 
 func main() {
+	config := getConfig()
+
 	plan, _ := os.ReadFile("github-metrics.json")
 	var data Metrics
 	if err := json.Unmarshal(plan, &data); err != nil {
@@ -252,8 +304,8 @@ func main() {
 			}
 		}
 	}
-	// Choose 8 languages by size
-	if len(extractedData) > 8 {
+	// Choose N languages by size
+	if len(extractedData) > config.LanguagesToConsider {
 		type langSize struct {
 			lang string
 			size float64
@@ -266,11 +318,11 @@ func main() {
 		sort.Slice(sizes, func(i, j int) bool {
 			return sizes[i].size > sizes[j].size
 		})
-		// Keep only the top 8
-		if len(sizes) > 8 {
-			sizes = sizes[:8]
+		// Keep only the top N
+		if len(sizes) > config.LanguagesToConsider {
+			sizes = sizes[:config.LanguagesToConsider]
 		}
-		// Create a new map with only the top 8 languages
+		// Create a new map with only the top N languages
 		topLanguages := make(map[string][]float64)
 		for _, size := range sizes {
 			topLanguages[size.lang] = extractedData[size.lang]
@@ -290,7 +342,12 @@ func main() {
 		//log.Printf("%s: %s (%s, %.2f%%)", lang, floatToFilesize(stats[0], 1), floatToString(stats[1]), stats[2])
 	}
 
-	grid, langColors := GenerateEmojiGrid(extractedData, 15, 5)
+	grid, langColors := GenerateEmojiGrid(
+		extractedData,
+		config.GridRows,
+		config.GridCols,
+		config.Colors,
+	)
 	statBlock := FormatLanguageStatsBlock(extractedData, langColors)
 	log.Println("\n" + grid)
 	log.Println("\nLanguage Stats:\n" + statBlock)
