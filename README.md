@@ -12,27 +12,27 @@
 
 ### 📊 Most Used Languages
 
-<sub>Based on 1.20 Mb of code</sub><br/>
-<sup>in 803 files across 343 commits.</sup>
+<sub>Based on 1.21 Mb of code</sub><br/>
+<sup>in 806 files across 346 commits.</sup>
 
 <pre>
-🟦 Python  5.25k lines  190.6 kb  43.95%
-🟨 C++     2.30k lines  49.7 kb   11.46%
-🟥 Typst   1.28k lines  47.9 kb   11.03%
-🟩 Shell   848 lines    34.8 kb    8.04%
-🟪 Java    1.23k lines  33.6 kb    7.75%
-🟧 Lua     1.22k lines  30.1 kb    6.95%
-🟫 Rust    974 lines    29.3 kb    6.75%
-⬛ Zig     418 lines    17.7 kb    4.08%
+🟦 Python  5.25k lines  190.6 kb  42.44%
+🟨 Typst   1.52k lines  63.3 kb   14.09%
+🟥 C++     2.30k lines  49.7 kb   11.06%
+🟩 Shell   848 lines    34.8 kb    7.76%
+🟪 Java    1.23k lines  33.6 kb    7.48%
+🟧 Lua     1.22k lines  30.1 kb    6.71%
+🟫 Rust    974 lines    29.3 kb    6.51%
+⬛ Zig     418 lines    17.7 kb    3.94%
 </pre>
 
 <details>
 <summary>🖼️ Graphical Representation</summary>
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟨🟨🟨🟨🟨🟨🟨🟨🟨🟥🟥🟥<br>🟥🟥🟥🟥🟥🟩🟩🟩🟩🟩🟩🟪🟪🟪🟪<br>🟪🟪🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫⬛⬛⬛<br>
+🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟥🟥🟥<br>🟥🟥🟥🟥🟥🟩🟩🟩🟩🟩🟩🟪🟪🟪🟪<br>🟪🟪🟧🟧🟧🟧🟧🟫🟫🟫🟫🟫⬛⬛⬛<br>
 </details>
 
 _<sub>Data acquired using [metrics][metrics_url] (v3.34.0).</sub>_<br/>
-_<sup>Last update on 9 Jan 2026, 01:57:17 GMT.</sup>_
+_<sup>Last update on 10 Jan 2026, 01:53:18 GMT.</sup>_
 
 ### 🛠 Currently Working On
 
