@@ -12,20 +12,27 @@
 
 ### 📊 Most Used Languages
 
-<sub>Based on 23.89 kb of code</sub><br/>
-<sup>in 10 files across 8 commits.</sup>
+<sub>Based on 1.90 Mb of code</sub><br/>
+<sup>in 1271 files across 653 commits.</sup>
 
 <pre>
-🟦 JavaScript  36 lines  1.3 kb  100.00%
+🟦 Python      5.79k lines  205.2 kb  33.66%
+🟨 Typst       3.23k lines  173.2 kb  28.42%
+🟥 C++         2.30k lines  49.7 kb    8.15%
+🟩 TypeScript  1.42k lines  41.3 kb    6.78%
+🟪 Go          1.80k lines  39.4 kb    6.46%
+🟧 Shell       848 lines    34.8 kb    5.72%
+🟫 Java        1.23k lines  33.6 kb    5.51%
+⬛ Vue         1.04k lines  32.4 kb    5.31%
 </pre>
 
 <details>
 <summary>🖼️ Graphical Representation</summary>
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>
+🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟨🟨🟨🟨🟨<br>🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨<br>🟨🟨🟥🟥🟥🟥🟥🟥🟩🟩🟩🟩🟩🟪🟪<br>🟪🟪🟪🟧🟧🟧🟧🟫🟫🟫🟫⬛⬛⬛⬛<br>
 </details>
 
 _<sub>Data acquired using [metrics][metrics_url] (v3.34.0).</sub>_<br/>
-_<sup>Last update on 4 Sept 2026, 04:29:50 GMT.</sup>_
+_<sup>Last update on 5 Sept 2026, 04:31:22 GMT.</sup>_
 
 ### 🛠 Currently Working On
 
